@@ -29,7 +29,7 @@ export default function Home() {
   }, []);
 
   const getToken = useCallback(async () => {
-    const roomName = "test";
+    const roomName = "nika-dev-vn";
     const participantName = randomUserName();
 
     const at = new AccessToken(API_KEY, API_SECRET, {
@@ -56,7 +56,7 @@ export default function Home() {
 
   return (
     <>
-      <main>
+      <main style={{ width: "100vw" }}>
         <LiveKitRoom
           video={true}
           audio={true}
